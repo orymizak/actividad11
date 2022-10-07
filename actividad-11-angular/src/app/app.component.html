@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="cuentas" routerLinkActive="active" class="nav-link" >Mostrar cuentas</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-cuentas" routerLinkActive="active" class="nav-link" >Agregar cuenta</a>
+        </li>
+    </ul>
+</nav>
+
+<div>&nbsp;</div>
+<h1 class = "text-center"> {{title}} </h1>
+<div>&nbsp;</div>
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+
+
+ <div class = "container">
+ </div>
+<footer class = "footer">
+    <div class = "container">
+        <span>Banregio</span>
+    </div>
+</footer>
+-

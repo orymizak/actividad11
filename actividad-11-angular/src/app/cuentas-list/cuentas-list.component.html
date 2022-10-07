@@ -1,0 +1,19 @@
+<h2>Lista de cuentas</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>ID Cuenta</th><th>Nombre</th><th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let cuentas of cuentas">
+            <td style = "width: 30%;">  {{ cuentas.id }} </td>
+            <td style = "width: 30%;">  {{ cuentas.nombre }} </td>
+            <td style = "width: 40%;"> 
+                <button (click) = "viewCuentas(cuentas.id)" class = "btn btn-success">Ver detalles</button>
+                <button (click) = "updateCuentas(cuentas.id)" class = "btn btn-info" style = "margin-left: 10px;">Actualizar</button>
+                <button (click) = "deleteCuentas(cuentas.id)" class = "btn btn-danger" style = "margin-left: 10px;">Eliminar</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>
